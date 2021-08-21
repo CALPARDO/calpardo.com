@@ -1,0 +1,3093 @@
+/*
+                        _______
+                       /       \
+                      .==.    .==.
+                     ((  ))==((  ))
+                    / "=="    "=="\
+                   /____|| || ||___\
+       ________     ____    ________  ___    ___
+       |  ___  \   /    \   |  ___  \ |  |  /  /
+       |  |  \  \ /  /\  \  |  |  \  \|  |_/  /
+       |  |   )  /  /__\  \ |  |__/  /|  ___  \
+       |  |__/  /  ______  \|  ____  \|  |  \  \
+_______|_______/__/ ____ \__\__|___\__\__|___\__\____
+|  ___  \ |  ____/ /    \   |  ___  \ |  ____|  ___  \
+|  |  \  \|  |___ /  /\  \  |  |  \  \|  |___|  |  \  \
+|  |__/  /|  ____/  /__\  \ |  |   )  |  ____|  |__/  /
+|  ____  \|  |__/  ______  \|  |__/  /|  |___|  ____  \
+|__|   \__\____/__/      \__\_______/ |______|__|   \__\
+                https://darkreader.org
+*/
+/* User-Agent Style */
+html {
+    background-color: #0d0f10 !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #0d0f10;
+}
+html, body, input, textarea, select, button {
+    border-color: #7c7262;
+    color: #ffffff;
+}
+a {
+    color: #2ea0ff;
+}
+table {
+    border-color: #565e62;
+}
+::placeholder {
+    color: #c9c0b4;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #575e00 !important;
+    color: #ffffff !important;
+}
+::-webkit-scrollbar {
+    background-color: #161a1b;
+    color: #c0b8aa;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #444a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5a6267;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #474f52;
+}
+::-webkit-scrollbar-corner {
+    background-color: #0d0f10;
+}
+* {
+    scrollbar-color: #161a1b #444a4d;
+}
+::selection {
+    background-color: #2f2f2f !important;
+    color: #FFF !important;
+}
+::-moz-selection {
+    background-color: #2f2f2f !important;
+    color: #FFF !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, embed[type="application/pdf"] {
+    filter: invert(100%) hue-rotate(180deg) brightness(108%) !important;
+}
+
+/* Variables Style */
+:root {
+   --darkreader-neutral-background: #07090a;
+   --darkreader-neutral-text: #f7f2ec;
+   --darkreader-selection-background: #2f2f2f;
+   --darkreader-selection-text: #FFF;
+}
+
+/* Modified CSS */
+.owl-carousel {
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-carousel .owl-video-wrapper {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.owl-carousel .owl-video-play-icon {
+    background-image: url("https://www.calpardo.com/css/owl.video.play.png");
+    background-color: initial;
+}
+.fa-border {
+    border-color: rgb(48, 53, 55);
+}
+.fa-inverse {
+    color: rgb(255, 255, 255);
+}
+.sr-only {
+    border-color: initial;
+}
+.nice-select {
+    -webkit-tap-highlight-color: transparent;
+    background-color: rgb(13, 15, 16);
+    border-color: rgb(49, 55, 58);
+    outline-color: initial;
+}
+.nice-select:hover {
+    border-color: rgb(54, 60, 63);
+}
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+    border-color: rgb(77, 85, 88);
+}
+.nice-select::after {
+    border-bottom-color: rgb(77, 85, 88);
+    border-right-color: rgb(77, 85, 88);
+}
+.nice-select.disabled {
+    border-color: rgb(48, 54, 57);
+    color: rgb(188, 179, 165);
+}
+.nice-select.disabled::after {
+    border-color: rgb(59, 66, 69);
+}
+.nice-select .list {
+    background-color: rgb(13, 15, 16);
+    box-shadow: rgba(46, 51, 54, 0.11) 0px 0px 0px 1px;
+}
+.nice-select .list:hover .option:not(:hover) {
+    background-color: transparent !important;
+}
+.nice-select .option {
+    list-style-image: initial;
+    outline-color: initial;
+}
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+    background-color: rgb(19, 22, 24);
+}
+.nice-select .option.disabled {
+    background-color: transparent;
+    color: rgb(188, 179, 165);
+}
+.mfp-bg {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.mfp-wrap {
+    outline-color: initial !important;
+}
+.mfp-preloader {
+    color: rgb(228, 221, 213);
+}
+.mfp-preloader a {
+    color: rgb(228, 221, 213);
+}
+.mfp-preloader a:hover {
+    color: rgb(255, 255, 255);
+}
+button.mfp-close,
+button.mfp-arrow {
+    background-image: initial;
+    background-color: transparent;
+    border-color: initial;
+    outline-color: initial;
+    box-shadow: none;
+}
+.mfp-close {
+    text-decoration-color: initial;
+    color: rgb(255, 255, 255);
+}
+.mfp-close-btn-in .mfp-close {
+    color: rgb(228, 221, 213);
+}
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+    color: rgb(255, 255, 255);
+}
+.mfp-counter {
+    color: rgb(228, 221, 213);
+}
+.mfp-arrow {
+    -webkit-tap-highlight-color: transparent;
+}
+.mfp-arrow::before,
+.mfp-arrow::after {
+    border-color: transparent;
+}
+.mfp-arrow-left::after {
+    border-right-color: rgb(42, 47, 49);
+}
+.mfp-arrow-left::before {
+    border-right-color: rgb(129, 119, 103);
+}
+.mfp-arrow-right::after {
+    border-left-color: rgb(42, 47, 49);
+}
+.mfp-arrow-right::before {
+    border-left-color: rgb(129, 119, 103);
+}
+.mfp-iframe-scaler iframe {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 8px;
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.mfp-figure::after {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 8px;
+    background-image: initial;
+    background-color: rgb(46, 51, 54);
+}
+.mfp-figure small {
+    color: rgb(215, 209, 198);
+}
+.mfp-title {
+    color: rgb(255, 254, 249);
+}
+@media screen and (max-width: 800px) and (orientation: landscape),
+screen and (max-height: 300px) {
+    .mfp-img-mobile .mfp-bottom-bar {
+        background-image: initial;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .mfp-img-mobile .mfp-close {
+        background-image: initial;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    color: rgb(238, 234, 226);
+    background-color: rgb(13, 15, 16); 
+}
+[tabindex="-1"]:focus {
+    outline-color: initial !important;
+}
+abbr[title],
+abbr[data-original-title] {
+    text-decoration-color: initial;
+    border-bottom-color: initial;
+}
+a {
+    color: rgb(46, 181, 255);
+    text-decoration-color: initial;
+    background-color: transparent;
+}
+a:hover {
+    color: rgb(102, 207, 255);
+    text-decoration-color: initial;
+}
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration-color: initial;
+}
+a:not([href]):not([tabindex]):focus,
+a:not([href]):not([tabindex]):hover {
+    color: inherit;
+    text-decoration-color: initial;
+}
+a:not([href]):not([tabindex]):focus {
+    outline-color: initial;
+}
+caption {
+    color: rgb(180, 169, 154);
+}
+button:focus {
+    outline-color: rgb(210, 134, 0);
+}
+fieldset {
+    border-color: initial;
+}
+legend {
+    color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: inherit;
+}
+hr {
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgba(154, 142, 124, 0.1);
+}
+mark,
+.mark {
+    background-color: rgb(60, 49, 0);
+}
+.list-unstyled {
+    list-style-image: initial;
+}
+.list-inline {
+    list-style-image: initial;
+}
+.blockquote-footer {
+    color: rgb(180, 169, 154);
+}
+.img-thumbnail {
+    background-color: rgb(13, 15, 16);
+    border-color: rgb(54, 59, 63);
+}
+.figure-caption {
+    color: rgb(180, 169, 154);
+}
+code {
+    color: rgb(223, 87, 93);
+    background-color: rgb(16, 20, 21);
+}
+a > code {
+    color: inherit;
+    background-color: inherit;
+}
+kbd {
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 20, 21);
+}
+pre {
+    color: rgb(238, 234, 226);
+}
+pre code {
+    color: inherit;
+    background-color: transparent;
+}
+.table {
+    background-color: transparent;
+}
+.table th,
+.table td {
+    border-top-color: rgb(48, 54, 57);
+}
+.table thead th {
+    border-bottom-color: rgb(48, 54, 57);
+}
+.table tbody + tbody {
+    border-top-color: rgb(48, 54, 57);
+}
+.table .table {
+    background-color: rgb(13, 15, 16);
+}
+.table-bordered {
+    border-color: rgb(48, 54, 57);
+}
+.table-bordered th,
+.table-bordered td {
+    border-color: rgb(48, 54, 57);
+}
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+    background-color: rgb(37, 42, 44);
+}
+.table-hover .table-primary:hover {
+    background-color: rgb(46, 51, 53);
+}
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+    background-color: rgb(46, 51, 53);
+}
+.table-secondary,
+.table-secondary > th,
+.table-secondary > td {
+    background-color: rgb(35, 38, 41);
+}
+.table-hover .table-secondary:hover {
+    background-color: rgb(43, 48, 51);
+}
+.table-hover .table-secondary:hover > td,
+.table-hover .table-secondary:hover > th {
+    background-color: rgb(43, 48, 51);
+}
+.table-success,
+.table-success > th,
+.table-success > td {
+    background-color: rgb(20, 71, 42);
+}
+.table-hover .table-success:hover {
+    background-color: rgb(25, 85, 49);
+}
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+    background-color: rgb(25, 85, 49);
+}
+.table-info,
+.table-info > th,
+.table-info > td {
+    background-color: rgb(13, 70, 79);
+}
+.table-hover .table-info:hover {
+    background-color: rgb(18, 82, 92);
+}
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+    background-color: rgb(18, 82, 92);
+}
+.table-warning,
+.table-warning > th,
+.table-warning > td {
+    background-color: rgb(96, 69, 0);
+}
+.table-hover .table-warning:hover {
+    background-color: rgb(114, 82, 0);
+}
+.table-hover .table-warning:hover > td,
+.table-hover .table-warning:hover > th {
+    background-color: rgb(114, 82, 0);
+}
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+    background-color: rgb(79, 1, 8);
+}
+.table-hover .table-danger:hover {
+    background-color: rgb(94, 3, 13);
+}
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+    background-color: rgb(94, 3, 13);
+}
+.table-light,
+.table-light > th,
+.table-light > td {
+    background-color: rgb(14, 16, 18);
+}
+.table-hover .table-light:hover {
+    background-color: rgb(22, 26, 27);
+}
+.table-hover .table-light:hover > td,
+.table-hover .table-light:hover > th {
+    background-color: rgb(22, 26, 27);
+}
+.table-dark,
+.table-dark > th,
+.table-dark > td {
+    background-color: rgb(51, 57, 59);
+}
+.table-hover .table-dark:hover {
+    background-color: rgb(59, 65, 69);
+}
+.table-hover .table-dark:hover > td,
+.table-hover .table-dark:hover > th {
+    background-color: rgb(59, 65, 69);
+}
+.table-active,
+.table-active > th,
+.table-active > td {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.table-hover .table-active:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.table-hover .table-active:hover > td,
+.table-hover .table-active:hover > th {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.thead-inverse th {
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 20, 21);
+}
+.thead-default th {
+    color: rgb(204, 197, 186);
+    background-color: rgb(26, 30, 31);
+}
+.table-inverse {
+    color: rgb(255, 255, 255);
+    background-color: rgb(18, 20, 21);
+}
+.table-inverse th,
+.table-inverse td,
+.table-inverse thead th {
+    border-color: rgb(132, 121, 105);
+}
+.table-inverse.table-bordered {
+    border-color: initial;
+}
+.table-inverse.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(13, 15, 16, 0.05);
+}
+.table-inverse.table-hover tbody tr:hover {
+    background-color: rgba(13, 15, 16, 0.07);
+}
+@media (max-width: 991px) {
+    .table-responsive.table-bordered {
+        border-color: initial;
+    }
+}
+.form-control {
+    color: rgb(204, 197, 186);
+    background-color: rgb(13, 15, 16);
+    background-image: none;
+    border-color: rgba(154, 142, 124, 0.15);
+}
+.form-control:focus {
+    color: rgb(204, 197, 186);
+    background-color: rgb(13, 15, 16);
+    border-color: rgb(0, 65, 154);
+    outline-color: initial;
+}
+.form-control::placeholder {
+    color: rgb(180, 169, 154);
+}
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: rgb(26, 30, 31);
+}
+.form-control-plaintext {
+    border-color: transparent;
+}
+.form-check.disabled .form-check-label {
+    color: rgb(180, 169, 154);
+}
+.invalid-feedback {
+    color: rgb(255, 69, 87);
+}
+.invalid-tooltip {
+    color: rgb(255, 255, 255);
+    background-color: rgba(185, 19, 35, 0.8);
+}
+.was-validated .form-control:valid,
+.form-control.is-valid,
+.was-validated .custom-select:valid,
+.custom-select.is-valid {
+    border-color: rgb(29, 174, 62);
+}
+.was-validated .form-control:valid:focus,
+.form-control.is-valid:focus,
+.was-validated .custom-select:valid:focus,
+.custom-select.is-valid:focus {
+    box-shadow: rgba(22, 147, 51, 0.25) 0px 0px 0px 0.2rem;
+}
+.was-validated .form-check-input:valid + .form-check-label,
+.form-check-input.is-valid + .form-check-label {
+    color: rgb(102, 248, 135);
+}
+.was-validated .custom-control-input:valid ~ .custom-control-indicator,
+.custom-control-input.is-valid ~ .custom-control-indicator {
+    background-color: rgba(22, 147, 51, 0.25);
+}
+.was-validated .custom-control-input:valid ~ .custom-control-description,
+.custom-control-input.is-valid ~ .custom-control-description {
+    color: rgb(102, 248, 135);
+}
+.was-validated .custom-file-input:valid ~ .custom-file-control,
+.custom-file-input.is-valid ~ .custom-file-control {
+    border-color: rgb(29, 174, 62);
+}
+.was-validated .custom-file-input:valid ~ .custom-file-control::before,
+.custom-file-input.is-valid ~ .custom-file-control::before {
+    border-color: inherit;
+}
+.was-validated .custom-file-input:valid:focus,
+.custom-file-input.is-valid:focus {
+    box-shadow: rgba(22, 147, 51, 0.25) 0px 0px 0px 0.2rem;
+}
+.was-validated .form-control:invalid,
+.form-control.is-invalid,
+.was-validated .custom-select:invalid,
+.custom-select.is-invalid {
+    border-color: rgb(164, 15, 29);
+}
+.was-validated .form-control:invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .custom-select:invalid:focus,
+.custom-select.is-invalid:focus {
+    box-shadow: rgba(185, 19, 35, 0.25) 0px 0px 0px 0.2rem;
+}
+.was-validated .form-check-input:invalid + .form-check-label,
+.form-check-input.is-invalid + .form-check-label {
+    color: rgb(255, 69, 87);
+}
+.was-validated .custom-control-input:invalid ~ .custom-control-indicator,
+.custom-control-input.is-invalid ~ .custom-control-indicator {
+    background-color: rgba(185, 19, 35, 0.25);
+}
+.was-validated .custom-control-input:invalid ~ .custom-control-description,
+.custom-control-input.is-invalid ~ .custom-control-description {
+    color: rgb(255, 69, 87);
+}
+.was-validated .custom-file-input:invalid ~ .custom-file-control,
+.custom-file-input.is-invalid ~ .custom-file-control {
+    border-color: rgb(164, 15, 29);
+}
+.was-validated .custom-file-input:invalid ~ .custom-file-control::before,
+.custom-file-input.is-invalid ~ .custom-file-control::before {
+    border-color: inherit;
+}
+.was-validated .custom-file-input:invalid:focus,
+.custom-file-input.is-invalid:focus {
+    box-shadow: rgba(185, 19, 35, 0.25) 0px 0px 0px 0.2rem;
+}
+.btn {
+    border-color: transparent;
+}
+.btn:focus,
+.btn:hover {
+    text-decoration-color: initial;
+}
+.btn:focus,
+.btn.focus {
+    outline-color: initial;
+    box-shadow: rgba(0, 103, 232, 0.25) 0px 0px 0px 3px;
+}
+.btn:active,
+.btn.active {
+    background-image: none;
+}
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+    border-color: rgb(0, 88, 202);
+}
+.btn-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 86, 196);
+    border-color: rgb(0, 97, 220);
+}
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: rgba(0, 103, 232, 0.5) 0px 0px 0px 3px;
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+    background-color: rgb(0, 103, 232);
+    border-color: rgb(0, 88, 202);
+}
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: rgb(0, 86, 196);
+    background-image: none;
+    border-color: rgb(0, 97, 220);
+}
+.btn-secondary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(91, 99, 104);
+    border-color: rgb(81, 90, 93);
+}
+.btn-secondary:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(97, 105, 110);
+    border-color: rgb(108, 98, 85);
+}
+.btn-secondary:focus,
+.btn-secondary.focus {
+    box-shadow: rgba(91, 99, 104, 0.5) 0px 0px 0px 3px;
+}
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+    background-color: rgb(91, 99, 104);
+    border-color: rgb(81, 90, 93);
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.show > .btn-secondary.dropdown-toggle {
+    background-color: rgb(97, 105, 110);
+    background-image: none;
+    border-color: rgb(108, 98, 85);
+}
+.btn-success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 147, 51);
+    border-color: rgb(29, 174, 62);
+}
+.btn-success:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 116, 38);
+    border-color: rgb(32, 188, 68);
+}
+.btn-success:focus,
+.btn-success.focus {
+    box-shadow: rgba(22, 147, 51, 0.5) 0px 0px 0px 3px;
+}
+.btn-success.disabled,
+.btn-success:disabled {
+    background-color: rgb(22, 147, 51);
+    border-color: rgb(29, 174, 62);
+}
+.btn-success:active,
+.btn-success.active,
+.show > .btn-success.dropdown-toggle {
+    background-color: rgb(15, 116, 38);
+    background-image: none;
+    border-color: rgb(32, 188, 68);
+}
+.btn-info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 142, 163);
+    border-color: rgb(9, 168, 192);
+}
+.btn-info:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 113, 130);
+    border-color: rgb(11, 182, 210);
+}
+.btn-info:focus,
+.btn-info.focus {
+    box-shadow: rgba(5, 142, 163, 0.5) 0px 0px 0px 3px;
+}
+.btn-info.disabled,
+.btn-info:disabled {
+    background-color: rgb(5, 142, 163);
+    border-color: rgb(9, 168, 192);
+}
+.btn-info:active,
+.btn-info.active,
+.show > .btn-info.dropdown-toggle {
+    background-color: rgb(2, 113, 130);
+    background-image: none;
+    border-color: rgb(11, 182, 210);
+}
+.btn-warning {
+    color: rgb(253, 249, 245);
+    background-color: rgb(228, 166, 0);
+    border-color: rgb(198, 145, 0);
+}
+.btn-warning:hover {
+    color: rgb(253, 249, 245);
+    background-color: rgb(202, 147, 0);
+    border-color: rgb(218, 159, 0);
+}
+.btn-warning:focus,
+.btn-warning.focus {
+    box-shadow: rgba(228, 166, 0, 0.5) 0px 0px 0px 3px;
+}
+.btn-warning.disabled,
+.btn-warning:disabled {
+    background-color: rgb(228, 166, 0);
+    border-color: rgb(198, 145, 0);
+}
+.btn-warning:active,
+.btn-warning.active,
+.show > .btn-warning.dropdown-toggle {
+    background-color: rgb(202, 147, 0);
+    background-image: none;
+    border-color: rgb(218, 159, 0);
+}
+.btn-danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 19, 35);
+    border-color: rgb(164, 15, 29);
+}
+.btn-danger:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(179, 18, 33);
+    border-color: rgb(179, 18, 33);
+}
+.btn-danger:focus,
+.btn-danger.focus {
+    box-shadow: rgba(185, 19, 35, 0.5) 0px 0px 0px 3px;
+}
+.btn-danger.disabled,
+.btn-danger:disabled {
+    background-color: rgb(185, 19, 35);
+    border-color: rgb(164, 15, 29);
+}
+.btn-danger:active,
+.btn-danger.active,
+.show > .btn-danger.dropdown-toggle {
+    background-color: rgb(179, 18, 33);
+    background-image: none;
+    border-color: rgb(179, 18, 33);
+}
+.btn-light {
+    color: rgb(253, 249, 245);
+    background-color: rgb(16, 20, 21);
+    border-color: rgb(44, 49, 52);
+}
+.btn-light:hover {
+    color: rgb(253, 249, 245);
+    background-color: rgb(30, 33, 36);
+    border-color: rgb(53, 59, 62);
+}
+.btn-light:focus,
+.btn-light.focus {
+    box-shadow: rgba(16, 20, 21, 0.5) 0px 0px 0px 3px;
+}
+.btn-light.disabled,
+.btn-light:disabled {
+    background-color: rgb(16, 20, 21);
+    border-color: rgb(44, 49, 52);
+}
+.btn-light:active,
+.btn-light.active,
+.show > .btn-light.dropdown-toggle {
+    background-color: rgb(30, 33, 36);
+    background-image: none;
+    border-color: rgb(53, 59, 62);
+}
+.btn-dark {
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 41, 43);
+    border-color: rgb(131, 120, 104);
+}
+.btn-dark:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(19, 22, 24);
+    border-color: rgb(141, 130, 113);
+}
+.btn-dark:focus,
+.btn-dark.focus {
+    box-shadow: rgba(37, 41, 43, 0.5) 0px 0px 0px 3px;
+}
+.btn-dark.disabled,
+.btn-dark:disabled {
+    background-color: rgb(37, 41, 43);
+    border-color: rgb(131, 120, 104);
+}
+.btn-dark:active,
+.btn-dark.active,
+.show > .btn-dark.dropdown-toggle {
+    background-color: rgb(19, 22, 24);
+    background-image: none;
+    border-color: rgb(141, 130, 113);
+}
+.btn-outline-primary {
+    color: rgb(46, 181, 255);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(0, 88, 202);
+}
+.btn-outline-primary:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+    border-color: rgb(0, 88, 202);
+}
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+    box-shadow: rgba(0, 103, 232, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: rgb(46, 181, 255);
+    background-color: transparent;
+}
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.show > .btn-outline-primary.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+    border-color: rgb(0, 88, 202);
+}
+.btn-outline-secondary {
+    color: rgb(180, 169, 154);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(81, 90, 93);
+}
+.btn-outline-secondary:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(91, 99, 104);
+    border-color: rgb(81, 90, 93);
+}
+.btn-outline-secondary:focus,
+.btn-outline-secondary.focus {
+    box-shadow: rgba(91, 99, 104, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-secondary.disabled,
+.btn-outline-secondary:disabled {
+    color: rgb(180, 169, 154);
+    background-color: transparent;
+}
+.btn-outline-secondary:active,
+.btn-outline-secondary.active,
+.show > .btn-outline-secondary.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(91, 99, 104);
+    border-color: rgb(81, 90, 93);
+}
+.btn-outline-success {
+    color: rgb(102, 248, 135);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(29, 174, 62);
+}
+.btn-outline-success:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 147, 51);
+    border-color: rgb(29, 174, 62);
+}
+.btn-outline-success:focus,
+.btn-outline-success.focus {
+    box-shadow: rgba(22, 147, 51, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-success.disabled,
+.btn-outline-success:disabled {
+    color: rgb(102, 248, 135);
+    background-color: transparent;
+}
+.btn-outline-success:active,
+.btn-outline-success.active,
+.show > .btn-outline-success.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 147, 51);
+    border-color: rgb(29, 174, 62);
+}
+.btn-outline-info {
+    color: rgb(82, 242, 255);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(9, 168, 192);
+}
+.btn-outline-info:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 142, 163);
+    border-color: rgb(9, 168, 192);
+}
+.btn-outline-info:focus,
+.btn-outline-info.focus {
+    box-shadow: rgba(5, 142, 163, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-info.disabled,
+.btn-outline-info:disabled {
+    color: rgb(82, 242, 255);
+    background-color: transparent;
+}
+.btn-outline-info:active,
+.btn-outline-info.active,
+.show > .btn-outline-info.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 142, 163);
+    border-color: rgb(9, 168, 192);
+}
+.btn-outline-warning {
+    color: rgb(255, 226, 20);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(198, 145, 0);
+}
+.btn-outline-warning:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 166, 0);
+    border-color: rgb(198, 145, 0);
+}
+.btn-outline-warning:focus,
+.btn-outline-warning.focus {
+    box-shadow: rgba(228, 166, 0, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-warning.disabled,
+.btn-outline-warning:disabled {
+    color: rgb(255, 226, 20);
+    background-color: transparent;
+}
+.btn-outline-warning:active,
+.btn-outline-warning.active,
+.show > .btn-outline-warning.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 166, 0);
+    border-color: rgb(198, 145, 0);
+}
+.btn-outline-danger {
+    color: rgb(255, 69, 87);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(164, 15, 29);
+}
+.btn-outline-danger:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 19, 35);
+    border-color: rgb(164, 15, 29);
+}
+.btn-outline-danger:focus,
+.btn-outline-danger.focus {
+    box-shadow: rgba(185, 19, 35, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-danger.disabled,
+.btn-outline-danger:disabled {
+    color: rgb(255, 69, 87);
+    background-color: transparent;
+}
+.btn-outline-danger:active,
+.btn-outline-danger.active,
+.show > .btn-outline-danger.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 19, 35);
+    border-color: rgb(164, 15, 29);
+}
+.btn-outline-light {
+    color: rgb(255, 255, 254);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(44, 49, 52);
+}
+.btn-outline-light:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 20, 21);
+    border-color: rgb(44, 49, 52);
+}
+.btn-outline-light:focus,
+.btn-outline-light.focus {
+    box-shadow: rgba(16, 20, 21, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-light.disabled,
+.btn-outline-light:disabled {
+    color: rgb(255, 255, 254);
+    background-color: transparent;
+}
+.btn-outline-light:active,
+.btn-outline-light.active,
+.show > .btn-outline-light.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(16, 20, 21);
+    border-color: rgb(44, 49, 52);
+}
+.btn-outline-dark {
+    color: rgb(221, 215, 206);
+    background-color: transparent;
+    background-image: none;
+    border-color: rgb(131, 120, 104);
+}
+.btn-outline-dark:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 41, 43);
+    border-color: rgb(131, 120, 104);
+}
+.btn-outline-dark:focus,
+.btn-outline-dark.focus {
+    box-shadow: rgba(37, 41, 43, 0.5) 0px 0px 0px 3px;
+}
+.btn-outline-dark.disabled,
+.btn-outline-dark:disabled {
+    color: rgb(221, 215, 206);
+    background-color: transparent;
+}
+.btn-outline-dark:active,
+.btn-outline-dark.active,
+.show > .btn-outline-dark.dropdown-toggle {
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 41, 43);
+    border-color: rgb(131, 120, 104);
+}
+.btn-link {
+    color: rgb(46, 181, 255);
+}
+.btn-link,
+.btn-link:active,
+.btn-link.active,
+.btn-link:disabled {
+    background-color: transparent;
+}
+.btn-link,
+.btn-link:focus,
+.btn-link:active {
+    border-color: transparent;
+    box-shadow: none;
+}
+.btn-link:hover {
+    border-color: transparent;
+}
+.btn-link:focus,
+.btn-link:hover {
+    color: rgb(102, 207, 255);
+    text-decoration-color: initial;
+    background-color: transparent;
+}
+.btn-link:disabled {
+    color: rgb(180, 169, 154);
+}
+.btn-link:disabled:focus,
+.btn-link:disabled:hover {
+    text-decoration-color: initial;
+}
+.dropdown-toggle::after {
+    border-top-color: initial;
+    border-right-color: transparent;
+    border-left-color: transparent;
+}
+.dropup .dropdown-toggle::after {
+    border-top-color: initial;
+    border-bottom-color: initial;
+}
+.dropdown-menu {
+    color: rgb(238, 234, 226);
+    list-style-image: initial;
+    background-color: rgb(13, 15, 16);
+    border-color: rgba(154, 142, 124, 0.15);
+}
+.dropdown-divider {
+    border-top-color: rgb(48, 54, 57);
+}
+.dropdown-item {
+    color: rgb(238, 234, 226);
+    background-image: none;
+    background-color: initial;
+    border-color: initial;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: rgb(248, 243, 237);
+    text-decoration-color: initial;
+    background-color: rgb(16, 20, 21);
+}
+.dropdown-item.active,
+.dropdown-item:active {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    background-color: rgb(0, 103, 232);
+}
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+    color: rgb(180, 169, 154);
+    background-color: transparent;
+}
+.show > a {
+    outline-color: initial;
+}
+.dropdown-header {
+    color: rgb(180, 169, 154);
+}
+.input-group-addon {
+    color: rgb(204, 197, 186);
+    background-color: rgb(26, 30, 31);
+    border-color: rgba(154, 142, 124, 0.15);
+}
+.input-group-addon:not(:last-child) {
+    border-right-color: initial;
+}
+.form-control + .input-group-addon:not(:first-child) {
+    border-left-color: initial;
+}
+.custom-control-input:checked ~ .custom-control-indicator {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+}
+.custom-control-input:focus ~ .custom-control-indicator {
+    box-shadow: rgb(13, 15, 16) 0px 0px 0px 1px,
+    rgb(0, 103, 232) 0px 0px 0px 3px;
+}
+.custom-control-input:active ~ .custom-control-indicator {
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 43, 46);
+}
+.custom-control-input:disabled ~ .custom-control-indicator {
+    background-color: rgb(26, 30, 31);
+}
+.custom-control-input:disabled ~ .custom-control-description {
+    color: rgb(180, 169, 154);
+}
+.custom-control-indicator {
+    background-color: rgb(36, 41, 43);
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+}
+.custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
+    background-color: rgb(0, 103, 232);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E");
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-indicator {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E");
+}
+.custom-select {
+    color: rgb(204, 197, 186);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+    background-color: rgb(13, 15, 16);
+    border-color: rgba(154, 142, 124, 0.15);
+}
+.custom-select:focus {
+    border-color: rgb(0, 65, 154);
+    outline-color: initial;
+}
+.custom-select:disabled {
+    color: rgb(180, 169, 154);
+    background-color: rgb(26, 30, 31);
+}
+.custom-file-control {
+    color: rgb(204, 197, 186);
+    background-color: rgb(13, 15, 16);
+    border-color: rgba(154, 142, 124, 0.15);
+}
+.custom-file-control::before {
+    color: rgb(204, 197, 186);
+    background-color: rgb(26, 30, 31);
+    border-color: rgba(154, 142, 124, 0.15);
+}
+.nav {
+    list-style-image: initial;
+}
+.nav-link:focus,
+.nav-link:hover {
+    text-decoration-color: initial;
+}
+.nav-link.disabled {
+    color: rgb(180, 169, 154);
+}
+.nav-tabs {
+    border-bottom-color: rgb(54, 59, 63);
+}
+.nav-tabs .nav-link {
+    border-color: transparent;
+}
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: rgb(48, 54, 57) rgb(48, 54, 57) rgb(54, 59, 63);
+}
+.nav-tabs .nav-link.disabled {
+    color: rgb(180, 169, 154);
+    background-color: transparent;
+    border-color: transparent;
+}
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: rgb(204, 197, 186);
+    background-color: rgb(13, 15, 16);
+    border-color: rgb(54, 59, 63) rgb(54, 59, 63) rgb(42, 47, 49);
+}
+.nav-pills .nav-link.active,
+.show > .nav-pills .nav-link {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+}
+.navbar-brand:focus,
+.navbar-brand:hover {
+    text-decoration-color: initial;
+}
+.navbar-nav {
+    list-style-image: initial;
+}
+.navbar-toggler {
+    background-image: initial;
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+    text-decoration-color: initial;
+}
+.navbar-toggler-icon {
+    background-image: initial;
+    background-color: initial;
+}
+.navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.3);
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(154, 142, 124, 0.1);
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;
+    charset=utf8,
+    %3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-light .navbar-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-brand {
+    color: rgb(255, 255, 255);
+}
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
+    color: rgb(255, 255, 255);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(255, 255, 255);
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(42, 47, 49, 0.1);
+}
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;
+    charset=utf8,
+    %3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-dark .navbar-text {
+    color: rgba(255, 255, 255, 0.5);
+}
+.card {
+    background-color: rgba(13, 15, 16, 0.66);
+    border-color: rgba(154, 142, 124, 0.13);
+}
+.card-link:hover {
+    text-decoration-color: initial;
+}
+.card-header {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom-color: rgba(154, 142, 124, 0.13);
+}
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top-color: rgba(154, 142, 124, 0.13);
+}
+.card-header-tabs {
+    border-bottom-color: initial;
+}
+@media (min-width: 576px) {
+    .card-group .card + .card {
+        border-left-color: initial;
+    }
+}
+.breadcrumb {
+    list-style-image: initial;
+    background-color: rgb(26, 30, 31);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: rgb(180, 169, 154);
+}
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration-color: initial;
+}
+.breadcrumb-item + .breadcrumb-item:hover::before {
+    text-decoration-color: initial;
+}
+.breadcrumb-item.active {
+    color: rgb(180, 169, 154);
+}
+.pagination {
+    list-style-image: initial;
+}
+.page-item.active .page-link {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+    border-color: rgb(0, 88, 202);
+}
+.page-item.disabled .page-link {
+    color: rgb(180, 169, 154);
+    background-color: rgb(13, 15, 16);
+    border-color: rgb(54, 59, 63);
+}
+.page-link {
+    color: rgb(46, 181, 255);
+    background-color: rgb(13, 15, 16);
+    border-color: rgb(54, 59, 63);
+}
+.page-link:focus,
+.page-link:hover {
+    color: rgb(102, 207, 255);
+    text-decoration-color: initial;
+    background-color: rgb(26, 30, 31);
+    border-color: rgb(54, 59, 63);
+}
+.badge {
+    color: rgb(255, 255, 255);
+}
+.badge-primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+}
+.badge-primary[href]:focus,
+.badge-primary[href]:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    background-color: rgb(0, 79, 182);
+}
+.badge-secondary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(91, 99, 104);
+}
+.badge-secondary[href]:focus,
+.badge-secondary[href]:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    background-color: rgb(91, 99, 104);
+}
+.badge-success {
+    color: rgb(255, 255, 255);
+    background-color: rgb(22, 147, 51);
+}
+.badge-success[href]:focus,
+.badge-success[href]:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    background-color: rgb(13, 107, 35);
+}
+.badge-info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 142, 163);
+}
+.badge-info[href]:focus,
+.badge-info[href]:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    background-color: rgb(1, 103, 119);
+}
+.badge-warning {
+    color: rgb(253, 249, 245);
+    background-color: rgb(228, 166, 0);
+}
+.badge-warning[href]:focus,
+.badge-warning[href]:hover {
+    color: rgb(253, 249, 245);
+    text-decoration-color: initial;
+    background-color: rgb(190, 137, 0);
+}
+.badge-danger {
+    color: rgb(255, 255, 255);
+    background-color: rgb(185, 19, 35);
+}
+.badge-danger[href]:focus,
+.badge-danger[href]:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    background-color: rgb(168, 15, 30);
+}
+.badge-light {
+    color: rgb(253, 249, 245);
+    background-color: rgb(16, 20, 21);
+}
+.badge-light[href]:focus,
+.badge-light[href]:hover {
+    color: rgb(253, 249, 245);
+    text-decoration-color: initial;
+    background-color: rgb(35, 38, 41);
+}
+.badge-dark {
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 41, 43);
+}
+.badge-dark[href]:focus,
+.badge-dark[href]:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    background-color: rgb(13, 16, 18);
+}
+.jumbotron {
+    background-color: rgb(26, 30, 31);
+}
+.alert {
+    border-color: transparent;
+}
+.alert-heading {
+    color: inherit;
+}
+.alert-dismissible .close {
+    color: inherit;
+}
+.alert-primary {
+    color: rgb(135, 221, 255);
+    background-color: rgb(30, 35, 36);
+    border-color: rgb(0, 55, 134);
+}
+.alert-primary hr {
+    border-top-color: rgb(0, 60, 143);
+}
+.alert-primary .alert-link {
+    color: rgb(235, 230, 221);
+}
+.alert-secondary {
+    color: rgb(209, 202, 191);
+    background-color: rgb(29, 32, 33);
+    border-color: rgb(53, 59, 62);
+}
+.alert-secondary hr {
+    border-top-color: rgb(58, 64, 66);
+}
+.alert-secondary .alert-link {
+    color: rgb(229, 224, 215);
+}
+.alert-success {
+    color: rgb(170, 255, 192);
+    background-color: rgb(15, 59, 33);
+    border-color: rgb(29, 93, 44);
+}
+.alert-success hr {
+    border-top-color: rgb(31, 101, 47);
+}
+.alert-success .alert-link {
+    color: rgb(245, 240, 234);
+}
+.alert-info {
+    color: rgb(157, 255, 255);
+    background-color: rgb(8, 55, 65);
+    border-color: rgb(20, 92, 102);
+}
+.alert-info hr {
+    border-top-color: rgb(22, 97, 109);
+}
+.alert-info .alert-link {
+    color: rgb(245, 240, 234);
+}
+.alert-warning {
+    color: rgb(255, 246, 120);
+    background-color: rgb(82, 59, 0);
+    border-color: rgb(134, 96, 0);
+}
+.alert-warning hr {
+    border-top-color: rgb(142, 103, 0);
+}
+.alert-warning .alert-link {
+    color: rgb(234, 228, 220);
+}
+.alert-danger {
+    color: rgb(255, 147, 158);
+    background-color: rgb(65, 0, 4);
+    border-color: rgb(110, 5, 16);
+}
+.alert-danger hr {
+    border-top-color: rgb(118, 8, 19);
+}
+.alert-danger .alert-link {
+    color: rgb(231, 226, 218);
+}
+.alert-light {
+    color: rgb(170, 159, 143);
+    background-color: rgb(14, 16, 18);
+    border-color: rgb(25, 25, 68);
+}
+.alert-light hr {
+    border-top-color: rgb(26, 26, 75);
+}
+.alert-light .alert-link {
+    color: rgb(186, 177, 163);
+}
+.alert-dark {
+    color: rgb(243, 238, 232);
+    background-color: rgb(40, 44, 47);
+    border-color: rgb(62, 68, 70);
+}
+.alert-dark hr {
+    border-top-color: rgb(65, 73, 75);
+}
+.alert-dark .alert-link {
+    color: rgb(255, 255, 255);
+}
+.progress {
+    background-color: rgb(26, 30, 31);
+}
+.progress-bar {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+}
+.progress-bar-striped {
+    background-image: linear-gradient(45deg,
+    rgba(13, 15, 16, 0.15) 25%,
+    rgba(0, 0, 0, 0) 25%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(13, 15, 16, 0.15) 50%,
+    rgba(13, 15, 16, 0.15) 75%,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 0));
+}
+.list-group-item-action {
+    color: rgb(204, 197, 186);
+}
+.list-group-item-action:focus,
+.list-group-item-action:hover {
+    color: rgb(204, 197, 186);
+    text-decoration-color: initial;
+    background-color: rgb(16, 20, 21);
+}
+.list-group-item-action:active {
+    color: rgb(238, 234, 226);
+    background-color: rgb(26, 30, 31);
+}
+.list-group-item {
+    background-color: rgb(13, 15, 16);
+    border-color: rgba(154, 142, 124, 0.13);
+}
+.list-group-item:focus,
+.list-group-item:hover {
+    text-decoration-color: initial;
+}
+.list-group-item.disabled,
+.list-group-item:disabled {
+    color: rgb(180, 169, 154);
+    background-color: rgb(13, 15, 16);
+}
+.list-group-item.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 103, 232);
+    border-color: rgb(0, 88, 202);
+}
+.list-group-flush .list-group-item {
+    border-right-color: initial;
+    border-left-color: initial;
+}
+.list-group-flush:first-child .list-group-item:first-child {
+    border-top-color: initial;
+}
+.list-group-flush:last-child .list-group-item:last-child {
+    border-bottom-color: initial;
+}
+.list-group-item-primary {
+    color: rgb(135, 221, 255);
+    background-color: rgb(37, 42, 44);
+}
+a.list-group-item-primary,
+button.list-group-item-primary {
+    color: rgb(135, 221, 255);
+}
+a.list-group-item-primary:focus,
+a.list-group-item-primary:hover,
+button.list-group-item-primary:focus,
+button.list-group-item-primary:hover {
+    color: rgb(135, 221, 255);
+    background-color: rgb(46, 51, 53);
+}
+a.list-group-item-primary.active,
+button.list-group-item-primary.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 46, 113);
+    border-color: rgb(0, 110, 246);
+}
+.list-group-item-secondary {
+    color: rgb(209, 202, 191);
+    background-color: rgb(35, 38, 41);
+}
+a.list-group-item-secondary,
+button.list-group-item-secondary {
+    color: rgb(209, 202, 191);
+}
+a.list-group-item-secondary:focus,
+a.list-group-item-secondary:hover,
+button.list-group-item-secondary:focus,
+button.list-group-item-secondary:hover {
+    color: rgb(209, 202, 191);
+    background-color: rgb(43, 48, 51);
+}
+a.list-group-item-secondary.active,
+button.list-group-item-secondary.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(52, 57, 60);
+    border-color: rgb(125, 114, 99);
+}
+.list-group-item-success {
+    color: rgb(170, 255, 192);
+    background-color: rgb(20, 71, 42);
+}
+a.list-group-item-success,
+button.list-group-item-success {
+    color: rgb(170, 255, 192);
+}
+a.list-group-item-success:focus,
+a.list-group-item-success:hover,
+button.list-group-item-success:focus,
+button.list-group-item-success:hover {
+    color: rgb(170, 255, 192);
+    background-color: rgb(25, 85, 49);
+}
+a.list-group-item-success.active,
+button.list-group-item-success.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(4, 69, 19);
+    border-color: rgb(36, 202, 74);
+}
+.list-group-item-info {
+    color: rgb(157, 255, 255);
+    background-color: rgb(13, 70, 79);
+}
+a.list-group-item-info,
+button.list-group-item-info {
+    color: rgb(157, 255, 255);
+}
+a.list-group-item-info:focus,
+a.list-group-item-info:hover,
+button.list-group-item-info:focus,
+button.list-group-item-info:hover {
+    color: rgb(157, 255, 255);
+    background-color: rgb(18, 82, 92);
+}
+a.list-group-item-info.active,
+button.list-group-item-info.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 65, 77);
+    border-color: rgb(14, 195, 225);
+}
+.list-group-item-warning {
+    color: rgb(255, 246, 120);
+    background-color: rgb(96, 69, 0);
+}
+a.list-group-item-warning,
+button.list-group-item-warning {
+    color: rgb(255, 246, 120);
+}
+a.list-group-item-warning:focus,
+a.list-group-item-warning:hover,
+button.list-group-item-warning:focus,
+button.list-group-item-warning:hover {
+    color: rgb(255, 246, 120);
+    background-color: rgb(114, 82, 0);
+}
+a.list-group-item-warning.active,
+button.list-group-item-warning.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 81, 0);
+    border-color: rgb(237, 174, 0);
+}
+.list-group-item-danger {
+    color: rgb(255, 147, 158);
+    background-color: rgb(79, 1, 8);
+}
+a.list-group-item-danger,
+button.list-group-item-danger {
+    color: rgb(255, 147, 158);
+}
+a.list-group-item-danger:focus,
+a.list-group-item-danger:hover,
+button.list-group-item-danger:focus,
+button.list-group-item-danger:hover {
+    color: rgb(255, 147, 158);
+    background-color: rgb(94, 3, 13);
+}
+a.list-group-item-danger.active,
+button.list-group-item-danger.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(94, 10, 19);
+    border-color: rgb(192, 35, 49);
+}
+.list-group-item-light {
+    color: rgb(170, 159, 143);
+    background-color: rgb(14, 16, 18);
+}
+a.list-group-item-light,
+button.list-group-item-light {
+    color: rgb(170, 159, 143);
+}
+a.list-group-item-light:focus,
+a.list-group-item-light:hover,
+button.list-group-item-light:focus,
+button.list-group-item-light:hover {
+    color: rgb(170, 159, 143);
+    background-color: rgb(22, 26, 27);
+}
+a.list-group-item-light.active,
+button.list-group-item-light.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(99, 109, 114);
+    border-color: rgb(85, 93, 98);
+}
+.list-group-item-dark {
+    color: rgb(243, 238, 232);
+    background-color: rgb(51, 57, 59);
+}
+a.list-group-item-dark,
+button.list-group-item-dark {
+    color: rgb(243, 238, 232);
+}
+a.list-group-item-dark:focus,
+a.list-group-item-dark:hover,
+button.list-group-item-dark:focus,
+button.list-group-item-dark:hover {
+    color: rgb(243, 238, 232);
+    background-color: rgb(59, 65, 69);
+}
+a.list-group-item-dark.active,
+button.list-group-item-dark.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(11, 13, 14);
+    border-color: rgb(142, 131, 114);
+}
+.close {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(13, 15, 16) 0px 1px 0px;
+}
+.close:focus,
+.close:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+}
+button.close {
+    background-image: initial;
+    background-color: transparent;
+    border-color: initial;
+}
+.modal {
+    outline-color: initial;
+}
+.modal-content {
+    background-color: rgb(13, 15, 16);
+    border-color: rgba(154, 142, 124, 0.2);
+    outline-color: initial;
+}
+.modal-backdrop {
+    background-color: rgb(0, 0, 0);
+}
+.modal-header {
+    border-bottom-color: rgb(48, 54, 57);
+}
+.modal-footer {
+    border-top-color: rgb(48, 54, 57); 
+}
+.tooltip {
+    text-decoration-color: initial; text-shadow: none; 
+}
+.tooltip.bs-tooltip-top .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="top"] .arrow::before {
+    border-top-color: rgb(154, 142, 124); 
+}
+.tooltip.bs-tooltip-right .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="right"] .arrow::before {
+    border-right-color: rgb(154, 142, 124); 
+}
+.tooltip.bs-tooltip-bottom .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: rgb(154, 142, 124); 
+}
+.tooltip.bs-tooltip-left .arrow::before, .tooltip.bs-tooltip-auto[x-placement^="left"] .arrow::before {
+    border-left-color: rgb(154, 142, 124);
+}
+.tooltip .arrow::before {
+    border-color: transparent;
+}
+.tooltip-inner {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.popover {
+    text-decoration-color: initial;
+    text-shadow: none;
+    background-color: rgb(13, 15, 16);
+    border-color: rgba(154, 142, 124, 0.2); 
+}
+.popover .arrow::before, .popover .arrow::after {
+    border-color: transparent; 
+}
+.popover.bs-popover-top .arrow::before, .popover.bs-popover-auto[x-placement^="top"] .arrow::before {
+    border-top-color: rgba(154, 142, 124, 0.25); 
+}
+.popover.bs-popover-top .arrow::after, .popover.bs-popover-auto[x-placement^="top"] .arrow::after {
+    border-top-color: rgb(42, 47, 49); 
+}
+.popover.bs-popover-right .arrow::before, .popover.bs-popover-auto[x-placement^="right"] .arrow::before {
+    border-right-color: rgba(154, 142, 124, 0.25); 
+}
+.popover.bs-popover-right .arrow::after, .popover.bs-popover-auto[x-placement^="right"] .arrow::after {
+    border-right-color: rgb(42, 47, 49); 
+}
+.popover.bs-popover-bottom .arrow::before, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::before {
+    border-bottom-color: rgba(154, 142, 124, 0.25); 
+}
+.popover.bs-popover-bottom .arrow::after, .popover.bs-popover-auto[x-placement^="bottom"] .arrow::after {
+    border-bottom-color: rgb(42, 47, 49); 
+}
+.popover.bs-popover-bottom .popover-header::before, .popover.bs-popover-auto[x-placement^="bottom"] .popover-header::before {
+    border-bottom-color: rgb(44, 49, 53); 
+}
+.popover.bs-popover-left .arrow::before, .popover.bs-popover-auto[x-placement^="left"] .arrow::before {
+    border-left-color: rgba(154, 142, 124, 0.25); 
+}
+.popover.bs-popover-left .arrow::after, .popover.bs-popover-auto[x-placement^="left"] .arrow::after {
+    border-left-color: rgb(42, 47, 49);
+}
+.popover-header {
+    color: inherit;
+    background-color: rgb(19, 21, 22);
+    border-bottom-color: rgb(49, 54, 57);
+}
+.popover-body {
+    color: rgb(238, 234, 226);
+}
+.carousel-control-prev,
+.carousel-control-next {
+    color: rgb(255, 255, 255);
+}
+.carousel-control-prev:focus,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-next:hover {
+    color: rgb(255, 255, 255);
+    text-decoration-color: initial;
+    outline-color: initial;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: initial;
+    background-color: transparent;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23085429' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTUwIiBoZWlnaHQ9IjE1MCI+PGRlZnM+PGZpbHRlciBpZD0iZGFya3JlYWRlci1pbWFnZS1maWx0ZXIiPjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwLjMwNCAtMC43NDkgLTAuODIwIDAuMDAwIDEuMTk2IC0wLjc4OCAwLjM1MiAtMC44MTAgMC4wMDAgMS4xNzkgLTAuNzc2IC0wLjc0NCAwLjMwNSAwLjAwMCAxLjE0OCAwLjAwMCAwLjAwMCAwLjAwMCAxLjAwMCAwLjAwMCIgLz48L2ZpbHRlcj48L2RlZnM+PGltYWdlIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiBmaWx0ZXI9InVybCgjZGFya3JlYWRlci1pbWFnZS1maWx0ZXIpIiB4bGluazpocmVmPSJkYXRhOmltYWdlL3N2Zyt4bWw7Y2hhcnNldD11dGY4LCUzQ3N2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIGZpbGw9JyUyMzA4NTQyOScgdmlld0JveD0nMCAwIDggOCclM0UlM0NwYXRoIGQ9J00xLjUgMGwtMS41IDEuNSAyLjUgMi41LTIuNSAyLjUgMS41IDEuNSA0LTQtNC00eicvJTNFJTNDL3N2ZyUzRSIgLz48L3N2Zz4=");
+}
+.carousel-indicators {
+    list-style-image: initial;
+}
+.carousel-indicators li {
+    background-color: rgba(13, 15, 16, 0.5);
+}
+.carousel-indicators .active {
+    background-color: rgb(13, 15, 16);
+}
+.carousel-caption {
+    color: rgb(255, 255, 255);
+}
+.bg-primary {
+    background-color: rgb(0, 103, 232) !important;
+}
+a.bg-primary:focus,
+a.bg-primary:hover {
+    background-color: rgb(0, 79, 182) !important;
+}
+.bg-secondary {
+    background-color: rgb(91, 99, 104) !important;
+}
+a.bg-secondary:focus,
+a.bg-secondary:hover {
+    background-color: rgb(91, 99, 104) !important;
+}
+.bg-success {
+    background-color: rgb(22, 147, 51) !important;
+}
+a.bg-success:focus,
+a.bg-success:hover {
+    background-color: rgb(13, 107, 35) !important;
+}
+.bg-info {
+    background-color: rgb(5, 142, 163) !important;
+}
+a.bg-info:focus,
+a.bg-info:hover {
+    background-color: rgb(1, 103, 119) !important;
+}
+.bg-warning {
+    background-color: rgb(228, 166, 0) !important;
+}
+a.bg-warning:focus,
+a.bg-warning:hover {
+    background-color: rgb(190, 137, 0) !important;
+}
+.bg-danger {
+    background-color: rgb(185, 19, 35) !important;
+}
+a.bg-danger:focus,
+a.bg-danger:hover {
+    background-color: rgb(168, 15, 30) !important;
+}
+.bg-light {
+    background-color: rgb(16, 20, 21) !important;
+}
+a.bg-light:focus,
+a.bg-light:hover {
+    background-color: rgb(35, 38, 41) !important;
+}
+.bg-dark {
+    background-color: rgb(37, 41, 43) !important;
+}
+a.bg-dark:focus,
+a.bg-dark:hover {
+    background-color: rgb(13, 16, 18) !important;
+}
+.bg-white {
+    background-color: rgb(13, 15, 16) !important;
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+.border {
+    border-color: rgb(48, 54, 57) !important;
+}
+.border-0 {
+    border-color: initial !important;
+}
+.border-top-0 {
+    border-top-color: initial !important;
+}
+.border-right-0 {
+    border-right-color: initial !important;
+}
+.border-bottom-0 {
+    border-bottom-color: initial !important;
+}
+.border-left-0 {
+    border-left-color: initial !important;
+}
+.border-primary {
+    border-color: rgb(0, 88, 202) !important;
+}
+.border-secondary {
+    border-color: rgb(81, 90, 93) !important;
+}
+.border-success {
+    border-color: rgb(29, 174, 62) !important;
+}
+.border-info {
+    border-color: rgb(9, 168, 192) !important;
+}
+.border-warning {
+    border-color: rgb(198, 145, 0) !important;
+}
+.border-danger {
+    border-color: rgb(164, 15, 29) !important;
+}
+.border-light {
+    border-color: rgb(44, 49, 52) !important;
+}
+.border-dark {
+    border-color: rgb(131, 120, 104) !important;
+}
+.border-white {
+    border-color: rgb(42, 47, 49) !important;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+    border-color: initial;
+}
+.sr-only {
+    border-color: initial;
+}
+.text-white {
+    color: rgb(255, 255, 255) !important;
+}
+.text-primary {
+    color: rgb(46, 181, 255) !important;
+}
+a.text-primary:focus,
+a.text-primary:hover {
+    color: rgb(83, 198, 255) !important;
+}
+.text-secondary {
+    color: rgb(180, 169, 154) !important;
+}
+a.text-secondary:focus,
+a.text-secondary:hover {
+    color: rgb(176, 166, 151) !important;
+}
+.text-success {
+    color: rgb(102, 248, 135) !important;
+}
+a.text-success:focus,
+a.text-success:hover {
+    color: rgb(137, 255, 164) !important;
+}
+.text-info {
+    color: rgb(82, 242, 255) !important;
+}
+a.text-info:focus,
+a.text-info:hover {
+    color: rgb(120, 252, 255) !important;
+}
+.text-warning {
+    color: rgb(255, 226, 20) !important;
+}
+a.text-warning:focus,
+a.text-warning:hover {
+    color: rgb(255, 234, 52) !important;
+}
+.text-danger {
+    color: rgb(255, 69, 87) !important;
+}
+a.text-danger:focus,
+a.text-danger:hover {
+    color: rgb(255, 80, 97) !important;
+}
+.text-light {
+    color: rgb(255, 255, 254) !important;
+}
+a.text-light:focus,
+a.text-light:hover {
+    color: rgb(242, 237, 231) !important;
+}
+.text-dark {
+    color: rgb(221, 215, 206) !important;
+}
+a.text-dark:focus,
+a.text-dark:hover {
+    color: rgb(241, 237, 230) !important;
+}
+.text-muted {
+    color: rgb(180, 169, 154) !important;
+}
+.text-hide {
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border-color: initial;
+}
+::selection {
+    background-color: rgb(0, 65, 25);
+    color: rgb(255, 255, 255);
+}
+::-webkit-input-placeholder {
+    color: rgb(175, 164, 149);
+}
+body {
+    color: rgb(255, 255, 255);
+}
+ol,
+ul {
+    list-style-image: initial;
+}
+iframe {
+    border-color: initial;
+}
+a,
+a:focus,
+a:hover {
+    text-decoration-color: initial;
+    outline-color: initial;
+}
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    text-decoration-color: initial;
+    outline-color: initial;
+}
+.gray-bg {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(241, 236, 229);
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: rgb(241, 236, 229);
+}
+h6,
+.h6 {
+    color: rgb(241, 236, 229);
+}
+.text-white {
+    color: rgb(255, 255, 255);
+}
+.light {
+    color: rgb(255, 255, 255);
+}
+.dark {
+    color: rgb(241, 236, 229);
+}
+.section-bg {
+    background-image: initial;
+    background-color: rgb(16, 19, 20);
+}
+.sample-text-area {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+b,
+i,
+sup,
+sub,
+u,
+del {
+    color: rgb(231, 225, 218);
+}
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
+    color: rgb(175, 164, 149);
+}
+.button-area {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.button-area .border-top-generic {
+    border-top-color: rgb(48, 53, 55);
+}
+.genric-btn {
+    outline-color: initial;
+    text-decoration-color: initial;
+}
+.genric-btn:focus {
+    outline-color: initial;
+}
+.genric-btn.default {
+    color: rgb(241, 236, 229);
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+    border-color: transparent;
+}
+.genric-btn.default:hover {
+    border-color: rgb(0, 0, 110);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.default-border {
+    border-color: rgb(0, 0, 110);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.default-border:hover {
+    color: rgb(241, 236, 229);
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+    border-color: transparent;
+}
+.genric-btn.primary {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(0, 65, 25);
+    border-color: transparent;
+}
+.genric-btn.primary:hover {
+    color: rgb(231, 225, 218);
+    border-color: rgb(136, 125, 109);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.primary-border {
+    color: rgb(231, 225, 218);
+    border-color: rgb(136, 125, 109);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.primary-border:hover {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(54, 134, 99);
+    border-color: transparent;
+}
+.genric-btn.success {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(13, 152, 169);
+    border-color: transparent;
+}
+.genric-btn.success:hover {
+    color: rgb(88, 243, 255);
+    border-color: rgb(10, 141, 157);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.success-border {
+    color: rgb(88, 243, 255);
+    border-color: rgb(10, 141, 157);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.success-border:hover {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(13, 152, 169);
+    border-color: transparent;
+}
+.genric-btn.info {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(0, 96, 191);
+    border-color: transparent;
+}
+.genric-btn.info:hover {
+    color: rgb(63, 195, 255);
+    border-color: rgb(0, 91, 181);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.info-border {
+    color: rgb(63, 195, 255);
+    border-color: rgb(0, 91, 181);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.info-border:hover {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(0, 96, 191);
+    border-color: transparent;
+}
+.genric-btn.warning {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(221, 209, 0);
+    border-color: transparent;
+}
+.genric-btn.warning:hover {
+    color: rgb(255, 255, 24);
+    border-color: rgb(206, 193, 0);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.warning-border {
+    color: rgb(255, 255, 24);
+    border-color: rgb(206, 193, 0);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.warning-border:hover {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(221, 209, 0);
+    border-color: transparent;
+}
+.genric-btn.danger {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(182, 5, 0);
+    border-color: transparent;
+}
+.genric-btn.danger:hover {
+    color: rgb(255, 85, 73);
+    border-color: rgb(171, 4, 0);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.danger-border {
+    color: rgb(255, 85, 73);
+    border-color: rgb(171, 4, 0);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.danger-border:hover {
+    color: rgb(255, 255, 255);
+    background-image: initial;
+    background-color: rgb(182, 5, 0);
+    border-color: transparent;
+}
+.genric-btn.link {
+    color: rgb(241, 236, 229);
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+    text-decoration-color: initial;
+    border-color: transparent;
+}
+.genric-btn.link:hover {
+    color: rgb(241, 236, 229);
+    border-color: rgb(0, 0, 110);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.genric-btn.link-border {
+    color: rgb(241, 236, 229);
+    border-color: rgb(0, 0, 110);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+    text-decoration-color: initial;
+}
+.genric-btn.link-border:hover {
+    color: rgb(241, 236, 229);
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+    border-color: transparent;
+}
+.genric-btn.disable {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+    border-color: transparent;
+}
+.generic-blockquote {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+    border-left-color: rgb(136, 125, 109);
+}
+.progress-table {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.progress-table .table-head .serial,
+.progress-table .table-head .country,
+.progress-table .table-head .visit,
+.progress-table .table-head .percentage {
+    color: rgb(241, 236, 229);
+}
+.progress-table .table-row {
+    border-top-color: rgb(0, 36, 102);
+}
+.progress-table .table-row .percentage .progress {
+    background-image: initial;
+    background-color: transparent;
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-1 {
+    background-color: rgb(10, 43, 152);
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-2 {
+    background-color: rgb(149, 10, 46);
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-3 {
+    background-color: rgb(162, 62, 0);
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-4 {
+    background-color: rgb(0, 147, 80);
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-5 {
+    background-color: rgb(0, 147, 80);
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-6 {
+    background-color: rgb(10, 43, 152);
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-7 {
+    background-color: rgb(75, 9, 148);
+}
+.progress-table .table-row .percentage .progress .progress-bar.color-8 {
+    background-color: rgb(149, 10, 46);
+}
+.unordered-list li::before {
+    border-color: rgb(136, 125, 109);
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.ordered-list li {
+    color: rgb(231, 225, 218);
+}
+.ordered-list li span {
+    color: rgb(175, 164, 149);
+}
+.ordered-list-alpha li {
+    color: rgb(231, 225, 218);
+}
+.ordered-list-alpha li span {
+    color: rgb(175, 164, 149);
+}
+.ordered-list-roman li {
+    color: rgb(231, 225, 218);
+}
+.ordered-list-roman li span {
+    color: rgb(175, 164, 149);
+}
+.single-input {
+    border-color: initial;
+    outline-color: initial;
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.single-input:focus {
+    outline-color: initial;
+}
+.input-group-icon .icon i {
+    color: rgb(174, 163, 147);
+}
+.single-textarea {
+    border-color: initial;
+    outline-color: initial;
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.single-textarea:focus {
+    outline-color: initial;
+}
+.single-input-primary {
+    border-color: transparent;
+    outline-color: initial;
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.single-input-primary:focus {
+    outline-color: initial;
+    border-color: rgb(136, 125, 109);
+}
+.single-input-accent {
+    border-color: transparent;
+    outline-color: initial;
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.single-input-accent:focus {
+    outline-color: initial;
+    border-color: rgb(157, 26, 4);
+}
+.single-input-secondary {
+    border-color: transparent;
+    outline-color: initial;
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.single-input-secondary:focus {
+    outline-color: initial;
+    border-color: rgb(158, 60, 0);
+}
+.default-switch {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.default-switch input + label {
+    background-image: initial;
+    background-color: rgb(0, 65, 25);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px 0px;
+}
+.primary-switch {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.primary-switch input + label::before {
+    background-image: initial;
+    background-color: transparent;
+}
+.primary-switch input + label::after {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px 0px;
+}
+.primary-switch input:checked + label::before {
+    background-image: initial;
+    background-color: rgb(0, 65, 25);
+}
+.confirm-switch {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.confirm-switch input + label::before {
+    background-image: initial;
+    background-color: transparent;
+}
+.confirm-switch input + label::after {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px 0px;
+}
+.confirm-switch input:checked + label::before {
+    background-image: initial;
+    background-color: rgb(13, 152, 169);
+}
+.primary-checkbox {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.primary-checkbox input + label {
+    border-color: rgb(47, 52, 54);
+}
+.primary-checkbox input:checked + label {
+    background-image: url("https://www.calpardo.com/img/elements/primary-check.png");
+    background-color: initial;
+    border-color: initial;
+}
+.confirm-checkbox {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.confirm-checkbox input + label {
+    border-color: rgb(47, 52, 54);
+}
+.confirm-checkbox input:checked + label {
+    background-image: url("https://www.calpardo.com/img/elements/success-check.png");
+    background-color: initial;
+    border-color: initial;
+}
+.disabled-checkbox {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.disabled-checkbox input + label {
+    border-color: rgb(47, 52, 54);
+}
+.disabled-checkbox input:checked + label {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC40MDYgLTAuODE0IC0wLjgxNCAwLjAwMCAxLjE1NSAtMC44MTQgMC40MDYgLTAuODE0IDAuMDAwIDEuMTU1IC0wLjgxNCAtMC44MTQgMC40MDYgMC4wMDAgMS4xNTUgMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQkFBQUFBUUNBWUFBQUFmOC85aEFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFBeXBwVkZoMFdFMU1PbU52YlM1aFpHOWlaUzU0YlhBQUFBQUFBRHcvZUhCaFkydGxkQ0JpWldkcGJqMGk3N3UvSWlCcFpEMGlWelZOTUUxd1EyVm9hVWg2Y21WVGVrNVVZM3ByWXpsa0lqOCtJRHg0T25odGNHMWxkR0VnZUcxc2JuTTZlRDBpWVdSdlltVTZibk02YldWMFlTOGlJSGc2ZUcxd2RHczlJa0ZrYjJKbElGaE5VQ0JEYjNKbElEVXVOaTFqTVRNeUlEYzVMakUxT1RJNE5Dd2dNakF4Tmk4d05DOHhPUzB4TXpveE16bzBNQ0FnSUNBZ0lDQWdJajRnUEhKa1pqcFNSRVlnZUcxc2JuTTZjbVJtUFNKb2RIUndPaTh2ZDNkM0xuY3pMbTl5Wnk4eE9UazVMekF5THpJeUxYSmtaaTF6ZVc1MFlYZ3Ribk1qSWo0Z1BISmtaanBFWlhOamNtbHdkR2x2YmlCeVpHWTZZV0p2ZFhROUlpSWdlRzFzYm5NNmVHMXdQU0pvZEhSd09pOHZibk11WVdSdlltVXVZMjl0TDNoaGNDOHhMakF2SWlCNGJXeHVjenA0YlhCTlRUMGlhSFIwY0RvdkwyNXpMbUZrYjJKbExtTnZiUzk0WVhBdk1TNHdMMjF0THlJZ2VHMXNibk02YzNSU1pXWTlJbWgwZEhBNkx5OXVjeTVoWkc5aVpTNWpiMjB2ZUdGd0x6RXVNQzl6Vkhsd1pTOVNaWE52ZFhKalpWSmxaaU1pSUhodGNEcERjbVZoZEc5eVZHOXZiRDBpUVdSdlltVWdVR2h2ZEc5emFHOXdJRU5ESURJd01UVXVOU0FvVFdGamFXNTBiM05vS1NJZ2VHMXdUVTA2U1c1emRHRnVZMlZKUkQwaWVHMXdMbWxwWkRveFFrUkdPRE5DUVVKQk16Y3hNVVUzT1VGRFJqazBRamM1TkVGRU9ETTJNQ0lnZUcxd1RVMDZSRzlqZFcxbGJuUkpSRDBpZUcxd0xtUnBaRG94UWtSR09ETkNRa0pCTXpjeE1VVTNPVUZEUmprMFFqYzVORUZFT0RNMk1DSStJRHg0YlhCTlRUcEVaWEpwZG1Wa1JuSnZiU0J6ZEZKbFpqcHBibk4wWVc1alpVbEVQU0o0YlhBdWFXbGtPa1l4UWtaRE56YzFRa0V6TlRFeFJUYzVRVU5HT1RSQ056azBRVVE0TXpZd0lpQnpkRkpsWmpwa2IyTjFiV1Z1ZEVsRVBTSjRiWEF1Wkdsa09rWXhRa1pETnpjMlFrRXpOVEV4UlRjNVFVTkdPVFJDTnprMFFVUTRNell3SWk4K0lEd3ZjbVJtT2tSbGMyTnlhWEIwYVc5dVBpQThMM0prWmpwU1JFWStJRHd2ZURwNGJYQnRaWFJoUGlBOFAzaHdZV05yWlhRZ1pXNWtQU0p5SWo4KyszTUlBd0FBQVUxSlJFRlVlTnBpL1BqeEl4c0RBME0zRU1jQXNSQURjZUE5RUM4RzRsSVdJTkhGek15V3g4TEN6c0RJeUVpVTd2Ly8vd3YrK2ZNejcrL2ZYOThaZ1M1NHk4N09LMFNzWmlSREdINysvUHlPQ2VSc1VqV0RBRlNQRUJNcG1pNWZ2c2l3Yjk5dUZER2lEZmp3NFQzRGpoMWJHYlMwZEVnMzROKy9md3hyMTY1a3NMR3haNUNRa0NUZGdFT0g5ak93c2JFeldGaFlZY2loR0hEcTFIR0dBd2Yyb2loNC9QZ1J3NWt6cHhnQ0EwT3dSak9LQWRyYXVnelhybDJCRy9MejUwK0dkZXRXTXZqNkJqTHc4UEJpancxZ092alB3Y0VIRi9qNjlRdkR3b1Z6d1lIMTd0MWJCbloyZGdadmIzK3Ntbi84K0lRWkJ0emNQQXp4OGNsZ2x6eC8vb3pCemMwTGYzcEFkd0d5Uzc1Ky9jb2dKaWFPVXpQSUJhQzg4QTZZTERGU0k4Z2xJSXd2S1lQMGdyeXdHSmd4WUFKRTV3T1FIaUNZQTNKQkdUQlhNUUp4TEpBdFNHSjJyZ1VJTUFDck1ZZGxuYk40NUFBQUFBQkpSVTVFcmtKZ2dnPT0iIC8+PC9zdmc+");
+    background-color: initial;
+    border-color: initial;
+}
+.primary-radio {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.primary-radio input + label {
+    border-color: rgb(47, 52, 54);
+}
+.primary-radio input:checked + label {
+    background-image: url("https://www.calpardo.com/img/elements/primary-radio.png");
+    background-color: initial;
+    border-color: initial;
+}
+.confirm-radio {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.confirm-radio input + label {
+    border-color: rgb(47, 52, 54);
+}
+.confirm-radio input:checked + label {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiPjxkZWZzPjxmaWx0ZXIgaWQ9ImRhcmtyZWFkZXItaW1hZ2UtZmlsdGVyIj48ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMC4zMDQgLTAuNzQ5IC0wLjgyMCAwLjAwMCAxLjE5NiAtMC43ODggMC4zNTIgLTAuODEwIDAuMDAwIDEuMTc5IC0wLjc3NiAtMC43NDQgMC4zMDUgMC4wMDAgMS4xNDggMC4wMDAgMC4wMDAgMC4wMDAgMS4wMDAgMC4wMDAiIC8+PC9maWx0ZXI+PC9kZWZzPjxpbWFnZSB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbHRlcj0idXJsKCNkYXJrcmVhZGVyLWltYWdlLWZpbHRlcikiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQkFBQUFBUUNBWUFBQUFmOC85aEFBQUFHWFJGV0hSVGIyWjBkMkZ5WlFCQlpHOWlaU0JKYldGblpWSmxZV1I1Y2NsbFBBQUFBeXBwVkZoMFdFMU1PbU52YlM1aFpHOWlaUzU0YlhBQUFBQUFBRHcvZUhCaFkydGxkQ0JpWldkcGJqMGk3N3UvSWlCcFpEMGlWelZOTUUxd1EyVm9hVWg2Y21WVGVrNVVZM3ByWXpsa0lqOCtJRHg0T25odGNHMWxkR0VnZUcxc2JuTTZlRDBpWVdSdlltVTZibk02YldWMFlTOGlJSGc2ZUcxd2RHczlJa0ZrYjJKbElGaE5VQ0JEYjNKbElEVXVOaTFqTVRNeUlEYzVMakUxT1RJNE5Dd2dNakF4Tmk4d05DOHhPUzB4TXpveE16bzBNQ0FnSUNBZ0lDQWdJajRnUEhKa1pqcFNSRVlnZUcxc2JuTTZjbVJtUFNKb2RIUndPaTh2ZDNkM0xuY3pMbTl5Wnk4eE9UazVMekF5THpJeUxYSmtaaTF6ZVc1MFlYZ3Ribk1qSWo0Z1BISmtaanBFWlhOamNtbHdkR2x2YmlCeVpHWTZZV0p2ZFhROUlpSWdlRzFzYm5NNmVHMXdQU0pvZEhSd09pOHZibk11WVdSdlltVXVZMjl0TDNoaGNDOHhMakF2SWlCNGJXeHVjenA0YlhCTlRUMGlhSFIwY0RvdkwyNXpMbUZrYjJKbExtTnZiUzk0WVhBdk1TNHdMMjF0THlJZ2VHMXNibk02YzNSU1pXWTlJbWgwZEhBNkx5OXVjeTVoWkc5aVpTNWpiMjB2ZUdGd0x6RXVNQzl6Vkhsd1pTOVNaWE52ZFhKalpWSmxaaU1pSUhodGNEcERjbVZoZEc5eVZHOXZiRDBpUVdSdlltVWdVR2h2ZEc5emFHOXdJRU5ESURJd01UVXVOU0FvVFdGamFXNTBiM05vS1NJZ2VHMXdUVTA2U1c1emRHRnVZMlZKUkQwaWVHMXdMbWxwWkRvelJqTTNNakF3TlVNM1FURXhNVVUzUVRaQ1JrSkNNVGMyTVVJd1FUWTROU0lnZUcxd1RVMDZSRzlqZFcxbGJuUkpSRDBpZUcxd0xtUnBaRG96UmpNM01qQXdOa00zUVRFeE1VVTNRVFpDUmtKQ01UYzJNVUl3UVRZNE5TSStJRHg0YlhCTlRUcEVaWEpwZG1Wa1JuSnZiU0J6ZEZKbFpqcHBibk4wWVc1alpVbEVQU0o0YlhBdWFXbGtPak5HTXpjeU1EQXpRemRCTVRFeFJUZEJOa0pHUWtJeE56WXhRakJCTmpnMUlpQnpkRkpsWmpwa2IyTjFiV1Z1ZEVsRVBTSjRiWEF1Wkdsa09qTkdNemN5TURBMFF6ZEJNVEV4UlRkQk5rSkdRa0l4TnpZeFFqQkJOamcxSWk4K0lEd3ZjbVJtT2tSbGMyTnlhWEIwYVc5dVBpQThMM0prWmpwU1JFWStJRHd2ZURwNGJYQnRaWFJoUGlBOFAzaHdZV05yWlhRZ1pXNWtQU0p5SWo4K0lTRUJtQUFBQVNWSlJFRlVlTnBpWkpSU1owQURXa0NjQXNTZVFLd0lGYnNIeER1QWVBNFFYME5Xekloa0FCc1E5d0Z4SmhBek1XQUgvNEI0TmhBWEF2RjNaQU5BbXJjQ3NRc0RjV0FmMUlXL21CbDVSVUFDazRBNG5JRjRBUEthRUJCdkE3bEFHOGk0Q01UTURLU0J2MENzendRTk1HeWF1NENZRTRxN3NNaUQ5S1NBdkRBQnlCQkJrK3dHNG5JZy9nUEZlNENZRzRpdDBkUUpnTHp3RXhxSXlJQURpSCtpaWJFRDhRODBzVjlNSlBpWkRZc1kySUI3V0NTYXNZalZZaEY3Q0FvREZTRERBazBDNUZjdUlENEVEVVNRZ1dWWURGZ09DZ01kSU9NQ21kRm9BUExDRlNDZXlVQTZBT201QWt1Sm9HaXlCR0lsRXBKeUxNZ1ZzRmo0QmNUZVFEd1ZtbUVZOEdRbWtNMCtVRDBvdVJFR1FFazdGWWc5b0M0Q0tYd0FkZVVjcUpmaEFDREFBR2dpTmNPQi83QTdBQUFBQUVsRlRrU3VRbUNDIiAvPjwvc3ZnPg==");
+    background-color: initial;
+    border-color: initial;
+}
+.disabled-radio {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.disabled-radio input + label {
+    border-color: rgb(47, 52, 54);
+}
+.disabled-radio input:checked + label {
+    background-image: url("https://www.calpardo.com/img/elements/disabled-radio.png");
+    background-color: initial;
+    border-color: initial;
+}
+.default-select .nice-select {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.default-select .nice-select .list {
+    border-color: initial;
+    box-shadow: none;
+}
+.default-select .nice-select .list .option.selected {
+    color: rgb(231, 225, 218);
+    background-image: initial;
+    background-color: transparent;
+}
+.default-select .nice-select .list .option:hover {
+    color: rgb(231, 225, 218);
+    background-image: initial;
+    background-color: transparent;
+}
+.form-select .nice-select {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+}
+.form-select .nice-select .list {
+    border-color: initial;
+    box-shadow: none;
+}
+.form-select .nice-select .list .option.selected {
+    color: rgb(231, 225, 218);
+    background-image: initial;
+    background-color: transparent;
+}
+.form-select .nice-select .list .option:hover {
+    color: rgb(231, 225, 218);
+    background-image: initial;
+    background-color: transparent;
+}
+.menu-bar span {
+    color: rgb(241, 236, 229);
+}
+.navbar-nav a {
+    color: rgb(241, 236, 229);
+}
+.navbar-nav a:hover {
+    color: rgb(231, 225, 218);
+}
+.p1-gradient-bg,
+.primary-btn,
+.banner-area,
+.cat-area .hb-facebook-inv:hover,
+.cat-area .hb-facebook-inv:hover::after,
+.cat-area .hb-facebook-inv:hover::before,
+.single-service:hover,
+.video-area .overlay-bg,
+.single-price:hover .bottom-sec,
+.single-price:hover .end-sec,
+.call-to-action-area,
+.footer-area .primary-btn,
+.footer-area .primary-btn:hover,
+.footer-social a:hover,
+.single-footer-widget .bb-btn,
+.generic-banner {
+    background-image: -webkit-linear-gradient(0deg,
+    rgb(0, 65, 20) 0%,
+    rgb(0, 65, 25) 100%);
+}
+.p1-gradient-color,
+.counter-left h2 {
+    background-image: -webkit-linear-gradient(0deg,
+    rgb(0, 65, 20) 0%,
+    rgb(0, 65, 25) 100%);
+    background-color: initial;
+    -webkit-text-fill-color: transparent;
+}
+.primary-btn {
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.primary-btn:hover {
+    color: rgb(241, 236, 229);
+    background-image: initial;
+    background-color: transparent;
+    border-color: rgb(141, 130, 113);
+    box-shadow: rgba(80, 88, 92, 0.5) 0px 20px 20px 0px;
+}
+.load-more {
+    border-color: transparent;
+}
+.load-more:hover {
+    background-image: initial;
+    background-color: transparent;
+    border-color: rgb(136, 125, 109);
+    color: rgb(231, 225, 218);
+}
+.default-header {
+    background-color: rgb(13, 15, 16);
+}
+.is-sticky .default-header {
+    background-color: rgb(13, 15, 16);
+    box-shadow: rgba(80, 87, 92, 0.3) -21.213px 21.213px 30px 0px;
+}
+.dropdown-menu {
+    border-color: initial;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: rgb(248, 243, 237);
+    text-decoration-color: initial;
+    background-color: transparent;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(154, 142, 124, 0.1);
+}
+.banner-left h1 {
+    color: rgb(241, 236, 229);
+}
+.header-btn {
+    background-color: rgb(13, 15, 16);
+    color: rgb(241, 236, 229);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 20px 0px;
+    border-color: transparent;
+}
+.header-btn:hover {
+    border-color: rgb(42, 47, 49);
+    background-image: initial;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.cat-area #hexagon:hover {
+    background-image: initial;
+    background-color: rgb(214, 0, 120);
+}
+.cat-area #hexagon:hover::after {
+    border-top-color: rgb(208, 0, 116);
+}
+.cat-area #hexagon:hover::before {
+    border-bottom-color: rgb(208, 0, 116);
+}
+.cat-area .hb-facebook-inv,
+.cat-area .hb-facebook-inv::after,
+.cat-area .hb-facebook-inv::before,
+.cat-area .hb-facebook:hover,
+.cat-area .hb-facebook:hover::after,
+.cat-area .hb-facebook:hover::before {
+    border-color: rgb(73, 80, 83);
+    color: rgb(198, 191, 177);
+    background-image: initial;
+    background-color: initial;
+}
+.cat-area .hb-facebook-inv:hover,
+.cat-area .hb-facebook-inv:hover::after,
+.cat-area .hb-facebook-inv:hover::before {
+    border-color: rgb(73, 80, 83);
+    color: rgb(255, 255, 255);
+}
+.about-area {
+    background-color: rgb(15, 18, 19);
+}
+.single-service {
+    background-color: rgb(15, 18, 19);
+}
+.single-service a {
+    color: rgb(241, 236, 229);
+}
+.single-service:hover {
+    box-shadow: rgba(80, 88, 92, 0.5) 0px 20px 20px 0px;
+    color: rgb(255, 255, 255);
+}
+.single-service:hover a {
+    color: rgb(255, 255, 255);
+}
+.video-area {
+    background-image: url("https://www.calpardo.com/img/video-bg.jpg");
+    background-color: initial;
+}
+.feature-area .lnr-arrow-up,
+.feature-area .lnr-arrow-down {
+    background-color: rgb(13, 15, 16);
+    box-shadow: rgba(80, 88, 92, 0.2) -14.142px 14.142px 20px 0px;
+    color: rgb(255, 255, 255);
+    border-color: rgb(46, 51, 53);
+}
+.single-carusel .image-wrap .overlay-bg {
+    background-image: initial;
+    background-color: rgb(0, 65, 25);
+}
+.price-area {
+    background-color: rgb(15, 18, 19);
+}
+.single-price {
+    background-color: rgb(13, 15, 16);
+}
+.single-price .top-sec,
+.single-price .bottom-sec {
+    border-bottom-color: rgb(48, 53, 55);
+}
+.single-price .price-btn {
+    background-image: initial;
+    background-color: rgb(15, 18, 19);
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+.single-price:hover .bottom-sec,
+.single-price:hover .end-sec {
+    box-shadow: rgba(80, 88, 92, 0.5) 0px 20px 20px 0px;
+    color: rgb(255, 255, 255);
+}
+.single-price:hover .price-btn {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+    color: rgb(241, 236, 229);
+}
+.single-price:hover .price-btn .lnr {
+    color: rgb(241, 236, 229);
+}
+.faq-area {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.counter-left p {
+    color: rgb(241, 236, 229);
+}
+.buttons {
+    border-color: transparent;
+    background-color: rgb(13, 15, 16);
+    color: rgb(241, 236, 229);
+}
+.buttons i {
+    color: rgb(231, 225, 218);
+}
+.buttons:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 20px 0px;
+    background-image: initial;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border-color: rgb(42, 47, 49);
+}
+.buttons:hover i,
+.buttons:hover a {
+    color: rgb(255, 255, 255) !important;
+}
+.buttons a {
+    color: rgb(241, 236, 229);
+}
+.footer-area {
+    background-color: rgb(15, 18, 19);
+}
+.footer-area .footer-nav li a {
+    color: rgb(255, 255, 255);
+}
+.footer-area .footer-nav li a:hover {
+    color: rgb(231, 225, 218);
+}
+.footer-area .primary-btn {
+    border-color: initial;
+    color: rgb(255, 255, 255);
+}
+.footer-area .primary-btn:focus {
+    outline-color: initial;
+}
+.footer-area .primary-btn span {
+    color: rgb(255, 255, 255);
+}
+.footer-area .primary-btn:hover {
+    box-shadow: none;
+    color: rgb(255, 255, 255);
+}
+.footer-area .primary-btn:hover span {
+    color: rgb(255, 255, 255);
+}
+.footer-area .primary-btn.white {
+    border-color: rgb(42, 47, 49);
+    color: rgb(255, 255, 255);
+}
+.footer-area .primary-btn.white span {
+    color: rgb(255, 255, 255);
+}
+.footer-area .primary-btn.white:hover {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+    color: rgb(231, 225, 218);
+}
+.footer-area .primary-btn.white:hover span {
+    color: rgb(231, 225, 218);
+}
+h6 {
+    color: rgb(255, 255, 255);
+}
+.copy-right-text i,
+.copy-right-text a {
+    color: rgb(231, 225, 218);
+}
+.footer-social a {
+    background-image: initial;
+    background-color: rgb(0, 1, 1);
+}
+.footer-social a:hover i {
+    color: rgb(255, 255, 255);
+}
+.footer-social i {
+    color: rgb(228, 221, 213);
+}
+.single-footer-widget {
+    color: rgb(255, 255, 255);
+}
+.single-footer-widget input {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+    color: rgb(175, 164, 149);
+}
+.single-footer-widget .bb-btn {
+    color: rgb(255, 255, 255);
+}
+.single-footer-widget .info {
+    color: rgb(255, 255, 255);
+}
+.single-footer-widget .info.valid {
+    color: rgb(123, 255, 123);
+}
+.single-footer-widget .info.error {
+    color: rgb(255, 15, 15);
+}
+.single-footer-widget ::selection {
+    background-color: rgb(0, 65, 25);
+    color: rgb(175, 164, 149);
+}
+.single-footer-widget ::-webkit-input-placeholder {
+    color: rgb(175, 164, 149);
+}
+.footer-text a,
+.footer-text i {
+    color: rgb(231, 225, 218);
+}
+.whole-wrap {
+    background-color: rgb(13, 15, 16);
+}
+.about-generic-area {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.about-generic-area .border-top-generic {
+    border-top-color: rgb(48, 53, 55);
+}
+.white-bg {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.section-top-border {
+    border-top-color: rgb(48, 53, 55);
+}
+.slider {
+    background-color: rgb(48, 53, 55);
+}
+.slider::before {
+    background-color: rgb(13, 15, 16);
+}
+input:checked + .slider {
+    background-color: rgb(0, 0, 0);
+}
+input:focus + .slider {
+    box-shadow: rgb(0, 0, 0) 0px 0px 1px;
+}
+html,
+body,
+.menu-container {
+    background-image: initial;
+    background-color: rgb(13, 15, 16);
+}
+.menu-wrap a {
+    color: rgb(255, 255, 255);
+}
+.menu-wrap a:hover,
+.menu-wrap a:focus {
+    color: rgb(231, 225, 218);
+}
+.menu-content::before {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.menu-button {
+    border-color: initial;
+    color: transparent;
+    background-image: initial;
+    background-color: transparent;
+}
+.menu-button::before {
+    background-image: linear-gradient(rgb(13, 15, 16) 20%,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0) 40%,
+    rgb(13, 15, 16) 40%,
+    rgb(13, 15, 16) 60%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0) 80%,
+    rgb(13, 15, 16) 80%);
+    background-color: initial;
+}
+.close-button {
+    border-color: initial;
+    background-image: initial;
+    background-color: transparent;
+    color: transparent;
+}
+.close-button::before,
+.close-button::after {
+    background-image: initial;
+    background-color: rgb(94, 104, 109);
+}
+.icon-list i {
+    color: rgb(231, 225, 217);
+}
+.morph-shape {
+    fill: rgb(255, 255, 255);
+}
+.fa-border {
+    border-color: rgb(48, 53, 55);
+}
+.fa-inverse {
+    color: rgb(255, 255, 255);
+}
+.sr-only {
+    border-color: initial;
+}
+.wpcc-privacy {
+    text-decoration-color: initial;
+}
+.wpcc-privacy:active,
+.wpcc-privacy:visited {
+    color: initial;
+}
+.wpcc-btn:hover {
+    text-decoration-color: initial;
+}
+.wpcc-color-custom-2045161522.wpcc-container {
+    background-color: rgb(19, 22, 24);
+    border-color: rgb(120, 110, 96);
+    color: rgb(255, 255, 255);
+}
+.wpcc-color-custom-2045161522 .wpcc-privacy,
+.wpcc-color-custom-2045161522 .wpcc-privacy:active,
+.wpcc-color-custom-2045161522 .wpcc-privacy:visited {
+    color: rgb(255, 255, 255);
+}
+.wpcc-color-custom-2045161522 .wpcc-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 65, 20);
+}
+.wpcc-color-custom-2045161522 .wpcc-btn:focus,
+.wpcc-color-custom-2045161522 .wpcc-btn:hover {
+    background-color: rgb(0, 46, 1);
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #865500 !important;
+    border-color: #f7c606 !important;
+    color: #ffffe3 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
