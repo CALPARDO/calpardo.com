@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="https://purepng.com/public/uploads/large/purepng.com-camera-icon-ios-7symbolsiconsapple-iosiosios-7-iconsios-7-721522596510oof4e.png" type="image">
+<meta charset="utf-8">
+<title>Calpardo | Camera</title>
+ 
+<style>
+#container {
+	margin: 0px auto;
+	width: 100vh;
+	height: 100%;
+	border: 5px #085429 solid;
+}
+#videoElement {
+	width: 100vh;
+	height: 100%;
+	background-color: #085429;
+}
+</style>
+</head>
+ 
+<body>
+<div id="container">
+	<video autoplay="true" id="videoElement" controls="true">
+	
+	</video>
+</div>
+<script>
+var video = document.querySelector("#videoElement");
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!");
+    });
+}
+</script>
+</body>
+</html>
