@@ -6,4 +6,4 @@
 - [ ] Fix favicon
 - [ ] Fix images on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
 - [ ] Change link of Namun 2020 Website as namun20.calpardo.com on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
-- [ ] Create dark.css for the site
+- [ ] Integrate dark.css with the toggle
