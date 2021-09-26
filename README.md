@@ -7,3 +7,4 @@
 - [ ] Fix images on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
 - [ ] Change link of Namun 2020 Website as namun20.calpardo.com on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
 - [ ] Integrate dark.css with the toggle
+- [ ] Create detailed page about agribots project
