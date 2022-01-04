@@ -5,7 +5,7 @@ Coming soon...
 
 - [x] Change calpardo logo png with svg on [index.html](https://github.com/CALPARDO/calpardo.com/blob/main/index.html)
 - [ ] Add CalparFX to [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
-- [ ] Remove CalparLink on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
+- [x] Remove CalparLink on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
 - [x] Fix favicon
 - [x] Fix images on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
 - [ ] Change link of Namun 2020 Website as namun20.calpardo.com on [projects.html](https://github.com/CALPARDO/calpardo.com/blob/main/projects.html)
